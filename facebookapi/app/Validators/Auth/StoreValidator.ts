@@ -6,7 +6,7 @@ export default class StoreValidator {
 
   public schema = schema.create({
     email: schema.string({ trim: true }, [rules.email()]),
-    password: schema.string({ trim: true }),
+    password: schema.string({ trim: true })
   })
 
   public messages = {}
